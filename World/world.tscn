@@ -1,5 +1,15 @@
-[gd_scene format=3 uid="uid://bbvoeq35fnkok"]
+[gd_scene load_steps=4 format=3 uid="uid://bbvoeq35fnkok"]
+
+[ext_resource type="Texture2D" uid="uid://chsqnjo6ufuae" path="res://textures/survival-island-grass.png" id="1_62w18"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8a836"]
+texture = ExtResource("1_62w18")
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_j8job"]
+sources/0 = SubResource("TileSetAtlasSource_8a836")
 
 [node name="World" type="Node2D"]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
+tile_set = SubResource("TileSet_j8job")
